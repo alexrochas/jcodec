@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'br.com.alex.cielo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.apache.commons:commons-lang3:3.0')
+    testCompile('org.codehaus.groovy:groovy-all:2.3.11')
+    testCompile('org.spockframework:spock-core:1.1-groovy-2.4')
+}
