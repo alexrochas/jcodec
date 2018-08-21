@@ -8,8 +8,8 @@ For a input string **0102120504123403123**
 ```java
 
   List<Codec> hCodecs = new ArrayList<>();
-	hCodecs.add(new LLCodec("01", "Padding two and size 02", 2));
-	hCodecs.add(new LLCodec("05", "Padding two and size 05", 2));
+  hCodecs.add(new LLCodec("01", "Padding two and size 02", 2));
+  hCodecs.add(new LLCodec("05", "Padding two and size 05", 2));
   hCodecs.add(new LLCodec("My Key", "Without padding with size 03"));
   
   Map<String, String> decoded = new HCodec(hCodecs).decode(input).getLeft();
